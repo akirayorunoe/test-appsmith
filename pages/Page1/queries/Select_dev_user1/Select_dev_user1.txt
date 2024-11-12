@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  dev.user
+WHERE
+  "employee_id" ilike '%{{user_table.searchText}}%'
+ORDER BY
+  "{{user_table.sortOrder.column || 'id'}}" {{user_table.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{user_table.pageSize}}
+OFFSET
+  {{user_table.pageOffset}}

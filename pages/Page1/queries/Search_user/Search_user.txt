@@ -1,0 +1,5 @@
+select u.username , u.id , u.full_name , u.employee_id
+from
+dev."user" u
+where u.full_name ilike '%{{user_table.searchText}}%' 
+LIMIT {{user_table.pageSize}} OFFSET {{user_table.pageNo - 1}};
