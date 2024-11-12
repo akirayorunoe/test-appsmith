@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_a87da1d7-30dd-4c4a-954a-a9d6bce78c7c",
-  "id": "Page1_Select_dev_user1",
+  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_1f97ac94-b0ef-486f-b97d-b8e019373f7a",
+  "id": "Registration_Total_record_dev_user1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  *\nFROM\n  dev.user\nWHERE\n  \"employee_id\" ilike '%{{user_table.searchText}}%'\nORDER BY\n  \"{{user_table.sortOrder.column || 'id'}}\" {{user_table.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{user_table.pageSize}}\nOFFSET\n  {{user_table.pageOffset}}",
+      "body": "SELECT COUNT(*) from dev.user where employee_id ilike '%{{user_table.searchText}}%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Select_dev_user1",
-    "pageId": "Page1",
+    "name": "Total_record_dev_user1",
+    "pageId": "Registration",
     "userSetOnLoad": false
   }
 }

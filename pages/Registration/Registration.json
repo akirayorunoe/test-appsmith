@@ -1,6 +1,7 @@
 {
   "gitSyncId": "6731b3a0ac6e2d73452a3ef7_b19b33e0-c20f-4d69-a35d-ab7ed5927e8b",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Registration",
+    "slug": "registration"
   }
 }

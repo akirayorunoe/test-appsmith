@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6731b3a0ac6e2d73452a3ef7_3e5c7ad0-3624-413b-83c1-567ca9f20adf",
-  "id": "Page1_Insert_dev_user1",
+  "id": "Registration_Insert_dev_user1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
     ],
     "executeOnLoad": false,
     "name": "Insert_dev_user1",
-    "pageId": "Page1",
+    "pageId": "Registration",
     "userSetOnLoad": false
   }
 }

@@ -26,12 +26,12 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Page1",
-      "isDefault": true
+      "id": "Registration",
+      "isDefault": false
     },
     {
-      "id": "Page2",
-      "isDefault": false
+      "id": "Home",
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {

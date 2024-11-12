@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6731b3a0ac6e2d73452a3ef7_f2ccc9e2-b705-425c-bbd9-cf08b30b2b12",
-  "id": "Page1_Search_user",
+  "id": "Registration_Search_user",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Search_user",
-    "pageId": "Page1",
+    "pageId": "Registration",
     "userSetOnLoad": false
   }
 }
