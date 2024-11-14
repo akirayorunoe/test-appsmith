@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 36,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "SECONDARY",
@@ -14,29 +14,35 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "tivjmzpkji",
-  "leftColumn": 30,
+  "key": "ze381xnwm6",
+  "leftColumn": 16,
   "minWidth": 120,
   "mobileBottomRow": 37,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 46,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "parentId": "sv709v9iob",
+  "onClick": "{{storeValue('defaulttab', 'Tab 1');}}",
+  "parentId": "56k2ymq216",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 46,
-  "text": "Reset",
-  "topRow": 33,
+  "rightColumn": 32,
+  "text": "Cancel",
+  "topRow": 32,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "dc5ozpikcu",
-  "widgetName": "Button2"
+  "widgetId": "yyjyxhvl2n",
+  "widgetName": "Button2Copy"
 }

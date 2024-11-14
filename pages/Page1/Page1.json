@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_30ad8cf4-3007-4d3d-aa00-0c6960070094",
+  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_cbb12188-621a-48f6-b94a-31fe762d70b8",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 840,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +25,7 @@
         }
       }
     ],
-    "name": "Home",
-    "slug": "home"
+    "name": "Page1",
+    "slug": "page1"
   }
 }

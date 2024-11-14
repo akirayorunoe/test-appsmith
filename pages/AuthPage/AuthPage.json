@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_30ad8cf4-3007-4d3d-aa00-0c6960070094",
+  "gitSyncId": "6731b3a0ac6e2d73452a3ef7_636a09fe-1a23-4b7c-8cac-9d408db1e7b8",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 840,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Home",
-    "slug": "home"
+    "name": "AuthPage",
+    "slug": "authpage"
   }
 }

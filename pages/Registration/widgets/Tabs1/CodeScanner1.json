@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "9lx5iynhlf",
+  "label": "Scan a QR/Barcode",
+  "leftColumn": 20,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 21.78125,
+  "parentId": "56k2ymq216",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 45,
+  "scannerLayout": "ALWAYS_ON",
+  "topRow": 0,
+  "type": "CODE_SCANNER_WIDGET",
+  "version": 1,
+  "widgetId": "um5mfzfkfs",
+  "widgetName": "CodeScanner1"
+}

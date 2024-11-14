@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 35,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "egm2swjstu",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 11.6875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card, Button, Input, List } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nfunction KanbanBoard() {\n  const [tasks, setTasks] = React.useState({\n    todo: appsmith.model.tips,\n    inProgress: [],\n    done: []\n  });\n  const [newTask, setNewTask] = React.useState(\"\");\n  const handleAddTask = () => {\n    if (newTask.trim()) {\n      setTasks(prevTasks => ({\n        ...prevTasks,\n        todo: [...prevTasks.todo, newTask]\n      }));\n      setNewTask(\"\");\n    }\n  };\n  const handleDragStart = (event, task, column) => {\n    event.dataTransfer.setData(\"task\", task);\n    event.dataTransfer.setData(\"column\", column);\n  };\n  const handleDrop = (event, targetColumn) => {\n    const task = event.dataTransfer.getData(\"task\");\n    const sourceColumn = event.dataTransfer.getData(\"column\");\n    setTasks(prevTasks => {\n      const sourceTasks = prevTasks[sourceColumn].filter(t => t !== task);\n      const targetTasks = [...prevTasks[targetColumn], task];\n      return {\n        ...prevTasks,\n        [sourceColumn]: sourceTasks,\n        [targetColumn]: targetTasks\n      };\n    });\n  };\n  const renderColumn = (title, tasks, column) => /*#__PURE__*/React.createElement(Card, {\n    title: title,\n    style: {\n      width: 300\n    },\n    onDragOver: e => e.preventDefault(),\n    onDrop: e => handleDrop(e, column)\n  }, /*#__PURE__*/React.createElement(List, {\n    dataSource: tasks,\n    renderItem: task => /*#__PURE__*/React.createElement(List.Item, {\n      draggable: true,\n      onDragStart: e => handleDragStart(e, task, column),\n      style: {\n        background: \"#fafafa\",\n        margin: \"5px 0\",\n        padding: \"10px\"\n      }\n    }, task)\n  }));\n  return /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      display: \"flex\",\n      gap: \"20px\",\n      justifyContent: \"center\",\n      padding: \"20px\"\n    }\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      marginBottom: \"20px\",\n      width: \"300px\"\n    }\n  }, /*#__PURE__*/React.createElement(Input, {\n    value: newTask,\n    onChange: e => setNewTask(e.target.value),\n    placeholder: \"New Task\",\n    style: {\n      marginBottom: \"10px\"\n    }\n  }), /*#__PURE__*/React.createElement(Button, {\n    type: \"primary\",\n    onClick: handleAddTask,\n    style: {\n      width: \"100%\"\n    }\n  }, \"Add Task\")), renderColumn(\"To Do\", tasks.todo, \"todo\"), renderColumn(\"In Progress\", tasks.inProgress, \"inProgress\"), renderColumn(\"Done\", tasks.done, \"done\"));\n}\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(KanbanBoard, null), document.getElementById(\"root\"));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 5,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Card, Button, Input, List } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\n\nfunction KanbanBoard() {\n\tconst [tasks, setTasks] = React.useState({\n\t\ttodo: appsmith.model.tips,\n\t\tinProgress: [],\n\t\tdone: []\n\t});\n\tconst [newTask, setNewTask] = React.useState(\"\");\n\n\tconst handleAddTask = () => {\n\t\tif (newTask.trim()) {\n\t\t\tsetTasks((prevTasks) => ({\n\t\t\t\t...prevTasks,\n\t\t\t\ttodo: [...prevTasks.todo, newTask]\n\t\t\t}));\n\t\t\tsetNewTask(\"\");\n\t\t}\n\t};\n\n\tconst handleDragStart = (event, task, column) => {\n\t\tevent.dataTransfer.setData(\"task\", task);\n\t\tevent.dataTransfer.setData(\"column\", column);\n\t};\n\n\tconst handleDrop = (event, targetColumn) => {\n\t\tconst task = event.dataTransfer.getData(\"task\");\n\t\tconst sourceColumn = event.dataTransfer.getData(\"column\");\n\n\t\tsetTasks((prevTasks) => {\n\t\t\tconst sourceTasks = prevTasks[sourceColumn].filter((t) => t !== task);\n\t\t\tconst targetTasks = [...prevTasks[targetColumn], task];\n\t\t\treturn { ...prevTasks, [sourceColumn]: sourceTasks, [targetColumn]: targetTasks };\n\t\t});\n\t};\n\n\tconst renderColumn = (title, tasks, column) => (\n\t\t<Card title={title} style={{ width: 300 }} onDragOver={(e) => e.preventDefault()} onDrop={(e) => handleDrop(e, column)}>\n\t\t\t<List\n\t\t\t\tdataSource={tasks}\n\t\t\t\trenderItem={(task) => (\n\t\t\t\t\t<List.Item\n\t\t\t\t\t\tdraggable\n\t\t\t\t\t\tonDragStart={(e) => handleDragStart(e, task, column)}\n\t\t\t\t\t\tstyle={{ background: \"#fafafa\", margin: \"5px 0\", padding: \"10px\" }}\n\t\t\t\t\t>\n\t\t\t\t\t\t{task}\n\t\t\t\t\t</List.Item>\n\t\t\t\t)}\n\t\t\t/>\n\t\t</Card>\n\t);\n\n\treturn (\n\t\t<div style={{ display: \"flex\", gap: \"20px\", justifyContent: \"center\", padding: \"20px\" }}>\n\t\t\t<div style={{ marginBottom: \"20px\", width: \"300px\" }}>\n\t\t\t\t<Input\n\t\t\t\t\tvalue={newTask}\n\t\t\t\t\tonChange={(e) => setNewTask(e.target.value)}\n\t\t\t\t\tplaceholder=\"New Task\"\n\t\t\t\t\tstyle={{ marginBottom: \"10px\" }}\n\t\t\t\t/>\n\t\t\t\t<Button type=\"primary\" onClick={handleAddTask} style={{ width: \"100%\" }}>\n\t\t\t\t\tAdd Task\n\t\t\t\t</Button>\n\t\t\t</div>\n\t\t\t{renderColumn(\"To Do\", tasks.todo, \"todo\")}\n\t\t\t{renderColumn(\"In Progress\", tasks.inProgress, \"inProgress\")}\n\t\t\t{renderColumn(\"Done\", tasks.done, \"done\")}\n\t\t</div>\n\t);\n}\n\nappsmith.onReady(() => {\n\treactDom.render(<KanbanBoard />, document.getElementById(\"root\"));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "dtjadgwg68",
+  "widgetName": "Custom1"
+}
