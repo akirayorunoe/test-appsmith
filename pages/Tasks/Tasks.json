@@ -1,70 +1,110 @@
 {
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_0b7778b9-3a20-48be-a7b3-6332305b04e6",
   "unpublishedPage": {
+    "name": "Tasks",
+    "slug": "tasks",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 990,
-          "canExtend": true,
-          "containerStyle": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
           "detachFromLayout": true,
-          "dynamicBindingPathList": [],
           "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 990,
+          "containerStyle": "none",
+          "snapRows": 99,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 1,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "children": [
             {
-              "widgetName": "Table1",
-              "defaultPageSize": 10,
-              "columnOrder": [
-                "id",
-                "title",
-                "assignedTo",
-                "dueDate",
-                "priority",
-                "status"
-              ],
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 2,
-              "bottomRow": 30,
-              "parentRowSpace": 10,
-              "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
               "isSortable": true,
-              "isVisible": true,
-              "leftColumn": 2,
-              "rightColumn": 62,
-              "widgetId": "table1",
-              "tableData": [
+              "type": "TABLE_WIDGET_V2",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
                 {
-                  "id": 1,
-                  "title": "Follow up with Tech Corp",
-                  "assignedTo": "John Smith",
-                  "dueDate": "2024-03-20",
-                  "priority": "High",
-                  "status": "In Progress"
+                  "key": "accentColor"
                 },
                 {
-                  "id": 2,
-                  "title": "Prepare proposal for Digital Solutions",
-                  "assignedTo": "Emma Johnson",
-                  "dueDate": "2024-03-25",
-                  "priority": "Medium",
-                  "status": "Not Started"
+                  "key": "borderRadius"
                 },
                 {
-                  "id": 3,
-                  "title": "Client meeting with Innovate Inc",
-                  "assignedTo": "Michael Brown",
-                  "dueDate": "2024-03-18",
-                  "priority": "High",
-                  "status": "Completed"
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.taskName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.assignedTo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.relatedTo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.priority.computedValue"
+                },
+                {
+                  "key": "primaryColumns.status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.dueDate.computedValue"
                 }
               ],
-              "columns": {
+              "leftColumn": 2,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 2,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "primaryColumnId": "id",
+              "columnSizeMap": {
+                "id": 80,
+                "taskName": 200,
+                "assignedTo": 150,
+                "relatedTo": 150,
+                "priority": 100,
+                "status": 120,
+                "dueDate": 120
+              },
+              "widgetName": "TasksTable",
+              "columnOrder": ["id", "taskName", "assignedTo", "relatedTo", "priority", "status", "dueDate"],
+              "primaryColumns": {
                 "id": {
+                  "allowCellWrapping": false,
                   "index": 0,
                   "width": 80,
+                  "originalId": "id",
                   "id": "id",
+                  "alias": "id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -72,13 +112,16 @@
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isDerived": false,
-                  "label": "ID"
+                  "label": "ID",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
                 },
-                "title": {
+                "taskName": {
+                  "allowCellWrapping": false,
                   "index": 1,
-                  "width": 250,
-                  "id": "title",
+                  "width": 200,
+                  "originalId": "taskName",
+                  "id": "taskName",
+                  "alias": "taskName",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -86,13 +129,16 @@
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isDerived": false,
-                  "label": "Title"
+                  "label": "Task Name",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"taskName\"]))}}"
                 },
                 "assignedTo": {
+                  "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
+                  "originalId": "assignedTo",
                   "id": "assignedTo",
+                  "alias": "assignedTo",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -100,13 +146,67 @@
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isDerived": false,
-                  "label": "Assigned To"
+                  "label": "Assigned To",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"assignedTo\"]))}}"
+                },
+                "relatedTo": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "relatedTo",
+                  "id": "relatedTo",
+                  "alias": "relatedTo",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "label": "Related To",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relatedTo\"]))}}"
+                },
+                "priority": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 100,
+                  "originalId": "priority",
+                  "id": "priority",
+                  "alias": "priority",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "label": "Priority",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}"
+                },
+                "status": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 120,
+                  "originalId": "status",
+                  "id": "status",
+                  "alias": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "label": "Status",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
                 },
                 "dueDate": {
-                  "index": 3,
+                  "allowCellWrapping": false,
+                  "index": 6,
                   "width": 120,
+                  "originalId": "dueDate",
                   "id": "dueDate",
+                  "alias": "dueDate",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "date",
@@ -114,55 +214,51 @@
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isDerived": false,
-                  "label": "Due Date"
-                },
-                "priority": {
-                  "index": 4,
-                  "width": 100,
-                  "id": "priority",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Priority"
-                },
-                "status": {
-                  "index": 5,
-                  "width": 120,
-                  "id": "status",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Status"
+                  "label": "Due Date",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dueDate\"]))}}"
                 }
+              },
+              "key": "tasks_table",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 62,
+              "textSize": "0.875rem",
+              "widgetId": "tasks_table",
+              "tableData": "[{\"id\":1,\"taskName\":\"Follow up with Tech Corp\",\"assignedTo\":\"John Smith\",\"relatedTo\":\"Enterprise Software License\",\"priority\":\"High\",\"status\":\"In Progress\",\"dueDate\":\"2024-03-25\"},{\"id\":2,\"taskName\":\"Prepare proposal for Digital Solutions\",\"assignedTo\":\"Emma Johnson\",\"relatedTo\":\"Cloud Migration Project\",\"priority\":\"Medium\",\"status\":\"Not Started\",\"dueDate\":\"2024-04-01\"},{\"id\":3,\"taskName\":\"Send contract to Innovate Inc\",\"assignedTo\":\"Michael Brown\",\"relatedTo\":\"IT Consulting Services\",\"priority\":\"High\",\"status\":\"Completed\",\"dueDate\":\"2024-03-20\"}]",
+              "label": "Tasks",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnWidthMap": {
+                "id": 80,
+                "taskName": 200,
+                "assignedTo": 150,
+                "relatedTo": 150,
+                "priority": 100,
+                "status": 120,
+                "dueDate": 120
               }
             }
-          ],
-          "leftColumn": 0,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "snapRows": 78,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
-          "widgetName": "MainContainer"
-        }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Tasks",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Tasks",
-    "slug": "tasks"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_tasks",
+  "policies": []
 }

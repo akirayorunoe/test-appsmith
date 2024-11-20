@@ -1,22 +1,34 @@
 {
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_7d0d6180-0b4c-419a-8940-b8608d81c50e",
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_dashboard",
   "unpublishedPage": {
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 990,
-          "canExtend": true,
-          "containerStyle": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
           "detachFromLayout": true,
-          "dynamicBindingPathList": [],
           "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 990,
+          "containerStyle": "none",
+          "snapRows": 99,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "children": [
             {
-              "widgetName": "StatBox1",
-              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "CustomerStatBox",
+              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 20,
-              "widgetId": "stat1",
+              "widgetId": "customer_stat",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -24,16 +36,18 @@
               "type": "STATBOX_WIDGET",
               "parentId": "0",
               "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
               "leftColumn": 0,
               "text": "Total Customers",
               "value": "3"
             },
             {
-              "widgetName": "StatBox2",
-              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "DealsStatBox",
+              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 41,
-              "widgetId": "stat2",
+              "widgetId": "deals_stat",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -41,16 +55,18 @@
               "type": "STATBOX_WIDGET",
               "parentId": "0",
               "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
               "leftColumn": 21,
               "text": "Active Deals",
               "value": "3"
             },
             {
-              "widgetName": "StatBox3",
-              "backgroundColor": "#FFFFFF",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "RevenueStatBox",
+              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 62,
-              "widgetId": "stat3",
+              "widgetId": "revenue_stat",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -58,15 +74,17 @@
               "type": "STATBOX_WIDGET",
               "parentId": "0",
               "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
               "leftColumn": 42,
               "text": "Total Revenue",
               "value": "$240,000"
             },
             {
-              "widgetName": "Chart1",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "RevenueChart",
               "rightColumn": 31,
-              "widgetId": "chart1",
+              "widgetId": "revenue_chart",
               "topRow": 9,
               "bottomRow": 33,
               "parentRowSpace": 10,
@@ -74,8 +92,17 @@
               "type": "CHART_WIDGET",
               "parentId": "0",
               "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
               "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
               "chartType": "BAR_CHART",
               "chartName": "Monthly Revenue",
               "chartData": [
@@ -94,9 +121,10 @@
               ]
             },
             {
-              "widgetName": "Chart2",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "DealsChart",
               "rightColumn": 62,
-              "widgetId": "chart2",
+              "widgetId": "deals_chart",
               "topRow": 9,
               "bottomRow": 33,
               "parentRowSpace": 10,
@@ -104,8 +132,17 @@
               "type": "CHART_WIDGET",
               "parentId": "0",
               "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
               "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
               "chartType": "PIE_CHART",
               "chartName": "Deals by Stage",
               "chartData": [
@@ -123,22 +160,19 @@
                 }
               ]
             }
-          ],
-          "leftColumn": 0,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "snapRows": 78,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
-          "widgetName": "MainContainer"
-        }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "Dashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Dashboard",
-    "slug": "dashboard"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false
 }
