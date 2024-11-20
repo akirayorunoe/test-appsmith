@@ -38,7 +38,7 @@
       "isDefault": false
     },
     {
-      "id": "Customers",
+      "id": "Tasks",
       "isDefault": false
     },
     {
@@ -46,7 +46,7 @@
       "isDefault": false
     },
     {
-      "id": "Tasks",
+      "id": "Customers",
       "isDefault": false
     }
   ],

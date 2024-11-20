@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "673d9b56b8dc772a1ea8509e_f5dd98d4-cef7-444c-b125-993fab192f40",
+  "id": "Deals_user",
+  "unpublishedCollection": {
+    "name": "user",
+    "pageId": "Deals",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "tasks",
+        "value": "[{\n  \"id\": 1,\n  \"title\": \"Follow up with Tech Corp\",\n  \"relatedTo\": \"John Smith\",\n  \"dueDate\": \"2024-01-20\",\n  \"priority\": \"High\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 2,\n  \"title\": \"Prepare proposal for Digital Solutions\",\n  \"relatedTo\": \"Emma Johnson\",\n  \"dueDate\": \"2024-01-25\",\n  \"priority\": \"Medium\",\n  \"status\": \"In Progress\"\n}, {\n  \"id\": 3,\n  \"title\": \"Schedule meeting with Innovate Inc\",\n  \"relatedTo\": \"Michael Brown\",\n  \"dueDate\": \"2024-01-30\",\n  \"priority\": \"Low\",\n  \"status\": \"Completed\"\n}]"
+      },
+      {
+        "name": "deals",
+        "value": "[{\n  \"id\": 1,\n  \"dealName\": \"Enterprise Software License\",\n  \"customer\": \"Tech Corp\",\n  \"value\": \"$75,000\",\n  \"stage\": \"Negotiation\",\n  \"closeDate\": \"2024-04-15\"\n}, {\n  \"id\": 2,\n  \"dealName\": \"Cloud Migration Project\",\n  \"customer\": \"Digital Solutions\",\n  \"value\": \"$120,000\",\n  \"stage\": \"Proposal\",\n  \"closeDate\": \"2024-05-01\"\n}, {\n  \"id\": 3,\n  \"dealName\": \"IT Consulting Services\",\n  \"customer\": \"Innovate Inc\",\n  \"value\": \"$45,000\",\n  \"stage\": \"Closed Won\",\n  \"closeDate\": \"2024-03-30\"\n}]"
+      },
+      {
+        "name": "customers",
+        "value": "[{\n  \"id\": 1,\n  \"name\": \"John Smith\",\n  \"email\": \"john.smith@email.com\",\n  \"phone\": \"+1-555-123-4567\",\n  \"company\": \"Tech Corp\",\n  \"status\": \"Active\"\n}, {\n  \"id\": 2,\n  \"name\": \"Emma Johnson\",\n  \"email\": \"emma.j@email.com\",\n  \"phone\": \"+1-555-234-5678\",\n  \"company\": \"Digital Solutions\",\n  \"status\": \"Active\"\n}, {\n  \"id\": 3,\n  \"name\": \"Michael Brown\",\n  \"email\": \"m.brown@email.com\",\n  \"phone\": \"+1-555-345-6789\",\n  \"company\": \"Innovate Inc\",\n  \"status\": \"Inactive\"\n}]"
+      }
+    ]
+  }
+}
