@@ -10,6 +10,120 @@
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
+          "widgetId": "0",
+          "children": [
+            {
+              "widgetName": "StatBox1",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 20,
+              "widgetId": "stat1",
+              "topRow": 0,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 17.21875,
+              "leftColumn": 0,
+              "text": "Total Customers",
+              "value": "3"
+            },
+            {
+              "widgetName": "StatBox2",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 41,
+              "widgetId": "stat2",
+              "topRow": 0,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 17.21875,
+              "leftColumn": 21,
+              "text": "Active Deals",
+              "value": "3"
+            },
+            {
+              "widgetName": "StatBox3",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 62,
+              "widgetId": "stat3",
+              "topRow": 0,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 17.21875,
+              "leftColumn": 42,
+              "text": "Total Revenue",
+              "value": "$240,000"
+            },
+            {
+              "widgetName": "Chart1",
+              "rightColumn": 31,
+              "widgetId": "chart1",
+              "topRow": 9,
+              "bottomRow": 33,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "CHART_WIDGET",
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 17.21875,
+              "leftColumn": 0,
+              "chartType": "BAR_CHART",
+              "chartName": "Monthly Revenue",
+              "chartData": [
+                {
+                  "x": "Jan",
+                  "y": 75000
+                },
+                {
+                  "x": "Feb",
+                  "y": 120000
+                },
+                {
+                  "x": "Mar",
+                  "y": 45000
+                }
+              ]
+            },
+            {
+              "widgetName": "Chart2",
+              "rightColumn": 62,
+              "widgetId": "chart2",
+              "topRow": 9,
+              "bottomRow": 33,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "CHART_WIDGET",
+              "parentId": "0",
+              "isLoading": false,
+              "parentColumnSpace": 17.21875,
+              "leftColumn": 32,
+              "chartType": "PIE_CHART",
+              "chartName": "Deals by Stage",
+              "chartData": [
+                {
+                  "x": "Negotiation",
+                  "y": 1
+                },
+                {
+                  "x": "Proposal",
+                  "y": 1
+                },
+                {
+                  "x": "Closed Won",
+                  "y": 1
+                }
+              ]
+            }
+          ],
           "leftColumn": 0,
           "minHeight": 800,
           "parentColumnSpace": 1,
@@ -20,7 +134,6 @@
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
-          "widgetId": "0",
           "widgetName": "MainContainer"
         }
       }

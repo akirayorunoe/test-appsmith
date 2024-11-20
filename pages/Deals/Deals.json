@@ -10,6 +10,144 @@
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
+          "widgetId": "0",
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "id",
+                "dealName",
+                "customer",
+                "value",
+                "stage",
+                "closeDate"
+              ],
+              "isVisibleDownload": true,
+              "topRow": 2,
+              "bottomRow": 30,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "isSortable": true,
+              "isVisible": true,
+              "leftColumn": 2,
+              "rightColumn": 62,
+              "widgetId": "table1",
+              "tableData": [
+                {
+                  "id": 1,
+                  "dealName": "Enterprise Software License",
+                  "customer": "Tech Corp",
+                  "value": "$75,000",
+                  "stage": "Negotiation",
+                  "closeDate": "2024-04-15"
+                },
+                {
+                  "id": 2,
+                  "dealName": "Cloud Migration Project",
+                  "customer": "Digital Solutions",
+                  "value": "$120,000",
+                  "stage": "Proposal",
+                  "closeDate": "2024-05-01"
+                },
+                {
+                  "id": 3,
+                  "dealName": "IT Consulting Services",
+                  "customer": "Innovate Inc",
+                  "value": "$45,000",
+                  "stage": "Closed Won",
+                  "closeDate": "2024-03-30"
+                }
+              ],
+              "columns": {
+                "id": {
+                  "index": 0,
+                  "width": 80,
+                  "id": "id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "ID"
+                },
+                "dealName": {
+                  "index": 1,
+                  "width": 200,
+                  "id": "dealName",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Deal Name"
+                },
+                "customer": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "customer",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Customer"
+                },
+                "value": {
+                  "index": 3,
+                  "width": 120,
+                  "id": "value",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Value"
+                },
+                "stage": {
+                  "index": 4,
+                  "width": 120,
+                  "id": "stage",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Stage"
+                },
+                "closeDate": {
+                  "index": 5,
+                  "width": 120,
+                  "id": "closeDate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
+                  "label": "Close Date"
+                }
+              }
+            }
+          ],
           "leftColumn": 0,
           "minHeight": 800,
           "parentColumnSpace": 1,
@@ -20,7 +158,6 @@
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
-          "widgetId": "0",
           "widgetName": "MainContainer"
         }
       }
