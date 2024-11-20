@@ -1,0 +1,30 @@
+{
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "revenue_stats",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 168,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "parentColumnSpace": 17.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 248,
+  "text": "Total Revenue",
+  "topRow": 0,
+  "type": "STATBOX_WIDGET",
+  "value": "$240,000",
+  "version": 1,
+  "widgetId": "revenue_stats",
+  "widgetName": "RevenueStats"
+}

@@ -1,0 +1,30 @@
+{
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 32,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "customer_stats",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "parentColumnSpace": 17.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 80,
+  "text": "Total Customers",
+  "topRow": 0,
+  "type": "STATBOX_WIDGET",
+  "value": "3",
+  "version": 1,
+  "widgetId": "customer_stats",
+  "widgetName": "CustomerStats"
+}

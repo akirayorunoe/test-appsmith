@@ -48,10 +48,6 @@
     {
       "id": "Tasks",
       "isDefault": false
-    },
-    {
-      "id": "AuthPage",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

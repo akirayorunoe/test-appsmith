@@ -1,221 +1,32 @@
 {
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_dashboard",
   "unpublishedPage": {
-    "name": "Dashboard",
-    "slug": "dashboard",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 99,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
+          "bottomRow": 1320,
           "canExtend": true,
-          "version": 1,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": [
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "CustomerStats",
-              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-              "rightColumn": 20,
-              "widgetId": "customer_stats",
-              "topRow": 0,
-              "bottomRow": 8,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "STATBOX_WIDGET",
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "parentColumnSpace": 17.21875,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "backgroundColor"
-                }
-              ],
-              "leftColumn": 0,
-              "text": "Total Customers",
-              "value": "3",
-              "key": "customer_stats"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "DealsStats",
-              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-              "rightColumn": 41,
-              "widgetId": "deals_stats",
-              "topRow": 0,
-              "bottomRow": 8,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "STATBOX_WIDGET",
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "parentColumnSpace": 17.21875,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "backgroundColor"
-                }
-              ],
-              "leftColumn": 21,
-              "text": "Active Deals",
-              "value": "3",
-              "key": "deals_stats"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "RevenueStats",
-              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-              "rightColumn": 62,
-              "widgetId": "revenue_stats",
-              "topRow": 0,
-              "bottomRow": 8,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "STATBOX_WIDGET",
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "parentColumnSpace": 17.21875,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "backgroundColor"
-                }
-              ],
-              "leftColumn": 42,
-              "text": "Total Revenue",
-              "value": "$240,000",
-              "key": "revenue_stats"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "RevenueChart",
-              "rightColumn": 31,
-              "widgetId": "revenue_chart",
-              "topRow": 9,
-              "bottomRow": 33,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "CHART_WIDGET",
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "parentColumnSpace": 17.21875,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                }
-              ],
-              "leftColumn": 0,
-              "chartType": "BAR_CHART",
-              "chartName": "Monthly Revenue",
-              "chartData": [
-                {
-                  "x": "Jan",
-                  "y": 75000
-                },
-                {
-                  "x": "Feb",
-                  "y": 120000
-                },
-                {
-                  "x": "Mar",
-                  "y": 45000
-                }
-              ],
-              "key": "revenue_chart"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "DealsChart",
-              "rightColumn": 62,
-              "widgetId": "deals_chart",
-              "topRow": 9,
-              "bottomRow": 33,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "CHART_WIDGET",
-              "parentId": "0",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "parentColumnSpace": 17.21875,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                }
-              ],
-              "leftColumn": 32,
-              "chartType": "PIE_CHART",
-              "chartName": "Deals by Stage",
-              "chartData": [
-                {
-                  "x": "Negotiation",
-                  "y": 1
-                },
-                {
-                  "x": "Proposal",
-                  "y": 1
-                },
-                {
-                  "x": "Closed Won",
-                  "y": 1
-                }
-              ],
-              "key": "deals_chart"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Dashboard",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "snapRows": 98,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_dashboard",
-  "policies": []
+    "name": "Dashboard",
+    "slug": "dashboard"
+  }
 }

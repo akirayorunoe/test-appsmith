@@ -1,235 +1,32 @@
 {
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_deals",
   "unpublishedPage": {
-    "name": "Deals",
-    "slug": "deals",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 99,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
+          "bottomRow": 1200,
           "canExtend": true,
-          "version": 1,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": [
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 2,
-              "isSortable": true,
-              "type": "TABLE_WIDGET_V2",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.id.computedValue"
-                },
-                {
-                  "key": "primaryColumns.name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.customer.computedValue"
-                },
-                {
-                  "key": "primaryColumns.value.computedValue"
-                },
-                {
-                  "key": "primaryColumns.stage.computedValue"
-                },
-                {
-                  "key": "primaryColumns.closeDate.computedValue"
-                }
-              ],
-              "leftColumn": 2,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 2,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-                }
-              },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "primaryColumnId": "id",
-              "columnSizeMap": {
-                "id": 80,
-                "name": 250,
-                "customer": 200,
-                "value": 150,
-                "stage": 150,
-                "closeDate": 150
-              },
-              "widgetName": "DealsTable",
-              "columnOrder": ["id", "name", "customer", "value", "stage", "closeDate"],
-              "primaryColumns": {
-                "id": {
-                  "allowCellWrapping": false,
-                  "index": 0,
-                  "width": 80,
-                  "originalId": "id",
-                  "id": "id",
-                  "alias": "id",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "ID",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
-                },
-                "name": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 250,
-                  "originalId": "name",
-                  "id": "name",
-                  "alias": "name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Deal Name",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}"
-                },
-                "customer": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 200,
-                  "originalId": "customer",
-                  "id": "customer",
-                  "alias": "customer",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Customer",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer\"]))}}"
-                },
-                "value": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "value",
-                  "id": "value",
-                  "alias": "value",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "currency",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Value",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"value\"]))}}"
-                },
-                "stage": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "stage",
-                  "id": "stage",
-                  "alias": "stage",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Stage",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"stage\"]))}}"
-                },
-                "closeDate": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "closeDate",
-                  "id": "closeDate",
-                  "alias": "closeDate",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "date",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Close Date",
-                  "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"closeDate\"]))}}"
-                }
-              },
-              "key": "deals-table",
-              "canFreezeColumn": true,
-              "rightColumn": 62,
-              "textSize": "0.875rem",
-              "widgetId": "deals-table",
-              "tableData": "[{\"id\":1,\"name\":\"Enterprise Software License\",\"customer\":\"Tech Corp\",\"value\":100000,\"stage\":\"Negotiation\",\"closeDate\":\"2024-03-31\"},{\"id\":2,\"name\":\"Cloud Migration Project\",\"customer\":\"Digital Solutions\",\"value\":75000,\"stage\":\"Proposal\",\"closeDate\":\"2024-04-15\"},{\"id\":3,\"name\":\"IT Consulting Services\",\"customer\":\"Innovate Inc\",\"value\":65000,\"stage\":\"Closed Won\",\"closeDate\":\"2024-03-20\"}]",
-              "label": "Deals",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER",
-              "responsiveBehavior": "fill",
-              "originalTopRow": 2
-            }
-          ]
-        },
-        "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Deals",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "snapRows": 98,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_deals",
-  "policies": []
+    "name": "Deals",
+    "slug": "deals"
+  }
 }
