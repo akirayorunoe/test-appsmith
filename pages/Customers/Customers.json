@@ -42,61 +42,129 @@
               "type": "TABLE_WIDGET",
               "defaultSelectedRow": "0",
               "isSortable": true,
-              "dynamicBindingPathList": [],
-              "leftColumn": 2,
-              "rightColumn": 62,
-              "tableData": [
+              "dynamicBindingPathList": [
                 {
-                  "id": 1,
-                  "name": "John Doe",
-                  "email": "john@example.com",
-                  "phone": "+1234567890",
-                  "company": "ABC Corp",
-                  "status": "Active"
-                },
-                {
-                  "id": 2,
-                  "name": "Jane Smith",
-                  "email": "jane@example.com",
-                  "phone": "+0987654321",
-                  "company": "XYZ Ltd",
-                  "status": "Inactive"
+                  "key": "tableData"
                 }
               ],
+              "leftColumn": 2,
+              "rightColumn": 62,
+              "textSize": "0.875rem",
+              "widgetId": "table1",
+              "tableData": "{{Get_Customers.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
               "columns": {
                 "id": {
                   "index": 0,
                   "width": 100,
+                  "id": "id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "ID"
                 },
                 "name": {
                   "index": 1,
                   "width": 200,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "Name"
                 },
                 "email": {
                   "index": 2,
                   "width": 200,
+                  "id": "email",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "Email"
                 },
                 "phone": {
                   "index": 3,
                   "width": 150,
+                  "id": "phone",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "Phone"
                 },
                 "company": {
                   "index": 4,
                   "width": 200,
+                  "id": "company",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "Company"
                 },
                 "status": {
                   "index": 5,
                   "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDerived": false,
                   "label": "Status"
                 }
               }
             }
-          ]
+          ],
+          "layoutOnLoadActions": [
+            [
+              {
+                "id": "Customers_Get_Customers",
+                "name": "Get_Customers",
+                "confirmBeforeExecute": false,
+                "pluginType": "JS",
+                "jsonPathKeys": [],
+                "timeoutInMillisecond": 10000
+              }
+            ]
+          ],
+          "validOnPageLoadActions": true,
+          "id": "Customers",
+          "deleted": false,
+          "policies": [],
+          "userPermissions": []
         }
       }
     ]
