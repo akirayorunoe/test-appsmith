@@ -1,0 +1,30 @@
+{
+  "bottomRow": 33,
+  "chartData": [
+    {
+      "x": "Prospecting",
+      "y": 30
+    },
+    {
+      "x": "Negotiation",
+      "y": 45
+    },
+    {
+      "x": "Closed Won",
+      "y": 25
+    }
+  ],
+  "chartName": "Deals by Stage",
+  "chartType": "PIE_CHART",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 32,
+  "parentColumnSpace": 17.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 62,
+  "topRow": 9,
+  "type": "CHART_WIDGET",
+  "widgetId": "chart2",
+  "widgetName": "Chart2"
+}

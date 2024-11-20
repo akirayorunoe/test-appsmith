@@ -1,159 +1,31 @@
 {
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_0b7778b9-3a20-48be-a7b3-6332305b04e6",
   "unpublishedPage": {
-    "name": "Tasks",
-    "slug": "tasks",
     "layouts": [
       {
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 78,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 90,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": [
-            {
-              "widgetName": "Table1",
-              "defaultPageSize": 10,
-              "columnOrder": [
-                "id",
-                "title",
-                "assignedTo",
-                "dueDate",
-                "priority",
-                "status"
-              ],
-              "isVisibleDownload": true,
-              "topRow": 2,
-              "bottomRow": 30,
-              "parentRowSpace": 10,
-              "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
-              "isSortable": true,
-              "isVisible": true,
-              "leftColumn": 2,
-              "rightColumn": 62,
-              "widgetId": "table1",
-              "tableData": [
-                {
-                  "id": 1,
-                  "title": "Follow up with ABC Corp",
-                  "assignedTo": "John Doe",
-                  "dueDate": "2024-03-15",
-                  "priority": "High",
-                  "status": "In Progress"
-                },
-                {
-                  "id": 2,
-                  "title": "Prepare proposal for XYZ Ltd",
-                  "assignedTo": "Jane Smith",
-                  "dueDate": "2024-03-20",
-                  "priority": "Medium",
-                  "status": "Pending"
-                }
-              ],
-              "columns": {
-                "id": {
-                  "index": 0,
-                  "width": 80,
-                  "id": "id",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "ID"
-                },
-                "title": {
-                  "index": 1,
-                  "width": 250,
-                  "id": "title",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Title"
-                },
-                "assignedTo": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "assignedTo",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Assigned To"
-                },
-                "dueDate": {
-                  "index": 3,
-                  "width": 150,
-                  "id": "dueDate",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "date",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Due Date"
-                },
-                "priority": {
-                  "index": 4,
-                  "width": 100,
-                  "id": "priority",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Priority"
-                },
-                "status": {
-                  "index": 5,
-                  "width": 150,
-                  "id": "status",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Status"
-                }
-              }
-            }
-          ]
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 78,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
         }
       }
-    ]
+    ],
+    "name": "Tasks",
+    "slug": "tasks"
   }
 }

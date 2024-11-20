@@ -1,172 +1,48 @@
 {
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_0cbd5826-2368-4155-8707-42ff8b4251a7",
   "unpublishedPage": {
-    "name": "Customers",
-    "slug": "customers",
     "layouts": [
       {
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 78,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 90,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "deleted": false,
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "children": [
-            {
-              "widgetName": "Table1",
-              "defaultPageSize": 10,
-              "columnOrder": [
-                "id",
-                "name",
-                "email",
-                "phone",
-                "company",
-                "status"
-              ],
-              "aliasMap": {},
-              "topRow": 2,
-              "bottomRow": 30,
-              "parentRowSpace": 10,
-              "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
-              "isSortable": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                }
-              ],
-              "leftColumn": 2,
-              "rightColumn": 62,
-              "textSize": "0.875rem",
-              "widgetId": "table1",
-              "tableData": "{{Get_Customers.data}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER",
-              "columns": {
-                "id": {
-                  "index": 0,
-                  "width": 100,
-                  "id": "id",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "ID"
-                },
-                "name": {
-                  "index": 1,
-                  "width": 200,
-                  "id": "name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Name"
-                },
-                "email": {
-                  "index": 2,
-                  "width": 200,
-                  "id": "email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Email"
-                },
-                "phone": {
-                  "index": 3,
-                  "width": 150,
-                  "id": "phone",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Phone"
-                },
-                "company": {
-                  "index": 4,
-                  "width": 200,
-                  "id": "company",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Company"
-                },
-                "status": {
-                  "index": 5,
-                  "width": 150,
-                  "id": "status",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDerived": false,
-                  "label": "Status"
-                }
-              }
-            }
-          ],
+          "id": "Customers",
           "layoutOnLoadActions": [
             [
               {
-                "id": "Customers_Get_Customers",
-                "name": "Get_Customers",
                 "confirmBeforeExecute": false,
-                "pluginType": "JS",
+                "id": "Customers_Get_Customers",
                 "jsonPathKeys": [],
+                "name": "Get_Customers",
+                "pluginType": "JS",
                 "timeoutInMillisecond": 10000
               }
             ]
           ],
-          "validOnPageLoadActions": true,
-          "id": "Customers",
-          "deleted": false,
+          "leftColumn": 0,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "policies": [],
-          "userPermissions": []
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 78,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "userPermissions": [],
+          "validOnPageLoadActions": true,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
         }
       }
-    ]
+    ],
+    "name": "Customers",
+    "slug": "customers"
   }
 }

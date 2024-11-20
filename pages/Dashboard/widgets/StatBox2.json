@@ -1,0 +1,17 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "bottomRow": 8,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 21,
+  "parentColumnSpace": 17.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 41,
+  "text": "Active Deals",
+  "topRow": 0,
+  "type": "STATBOX_WIDGET",
+  "value": "45",
+  "widgetId": "stat2",
+  "widgetName": "StatBox2"
+}
