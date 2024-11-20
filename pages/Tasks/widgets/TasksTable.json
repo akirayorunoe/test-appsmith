@@ -40,12 +40,12 @@
     "status"
   ],
   "columnSizeMap": {
-    "id": 80,
-    "title": 250,
-    "relatedTo": 200,
     "dueDate": 150,
+    "id": 80,
     "priority": 120,
-    "status": 120
+    "relatedTo": 200,
+    "status": 120,
+    "title": 250
   },
   "columnUpdatedAt": 1732092861035,
   "defaultPageSize": 10,
@@ -173,21 +173,21 @@
       "width": 150
     },
     "id": {
-      "allowCellWrapping": false,
-      "index": 0,
-      "width": 80,
-      "originalId": "id",
-      "id": "id",
       "alias": "id",
-      "horizontalAlignment": "LEFT",
-      "verticalAlignment": "CENTER",
+      "allowCellWrapping": false,
       "columnType": "text",
-      "textSize": "0.875rem",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
       "isVisible": true,
       "label": "ID",
-      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
+      "originalId": "id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 80
     },
     "id1": {
       "allowCellWrapping": false,
@@ -223,21 +223,21 @@
       "width": 150
     },
     "priority": {
-      "allowCellWrapping": false,
-      "index": 4,
-      "width": 120,
-      "originalId": "priority",
-      "id": "priority",
       "alias": "priority",
-      "horizontalAlignment": "LEFT",
-      "verticalAlignment": "CENTER",
+      "allowCellWrapping": false,
       "columnType": "text",
-      "textSize": "0.875rem",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}",
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "priority",
+      "index": 4,
       "isVisible": true,
       "label": "Priority",
-      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}"
+      "originalId": "priority",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 120
     },
     "priority1": {
       "alias": "priority",
@@ -274,21 +274,21 @@
       "width": 150
     },
     "relatedTo": {
-      "allowCellWrapping": false,
-      "index": 2,
-      "width": 200,
-      "originalId": "relatedTo",
-      "id": "relatedTo",
       "alias": "relatedTo",
-      "horizontalAlignment": "LEFT",
-      "verticalAlignment": "CENTER",
+      "allowCellWrapping": false,
       "columnType": "text",
-      "textSize": "0.875rem",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relatedTo\"]))}}",
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "relatedTo",
+      "index": 2,
       "isVisible": true,
       "label": "Related To",
-      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relatedTo\"]))}}"
+      "originalId": "relatedTo",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 200
     },
     "relatedTo1": {
       "alias": "relatedTo",
@@ -325,21 +325,21 @@
       "width": 150
     },
     "status": {
-      "allowCellWrapping": false,
-      "index": 5,
-      "width": 120,
-      "originalId": "status",
-      "id": "status",
       "alias": "status",
-      "horizontalAlignment": "LEFT",
-      "verticalAlignment": "CENTER",
+      "allowCellWrapping": false,
       "columnType": "text",
-      "textSize": "0.875rem",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "status",
+      "index": 5,
       "isVisible": true,
       "label": "Status",
-      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
+      "originalId": "status",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 120
     },
     "status1": {
       "alias": "status",
@@ -410,21 +410,21 @@
       "width": 150
     },
     "title": {
-      "allowCellWrapping": false,
-      "index": 1,
-      "width": 250,
-      "originalId": "title",
-      "id": "title",
       "alias": "title",
-      "horizontalAlignment": "LEFT",
-      "verticalAlignment": "CENTER",
+      "allowCellWrapping": false,
       "columnType": "text",
-      "textSize": "0.875rem",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "title",
+      "index": 1,
       "isVisible": true,
       "label": "Title",
-      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}"
+      "originalId": "title",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 250
     }
   },
   "renderMode": "CANVAS",

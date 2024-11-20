@@ -1,53 +1,32 @@
 {
   "gitSyncId": "673d8ab6b8dc772a1ea85020_deals",
   "unpublishedPage": {
-    "name": "Deals",
-    "slug": "deals",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 4896,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1200,
-          "containerStyle": "none",
-          "snapRows": 98,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 90,
-          "minHeight": 800,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": [
-            {
-              "widgetName": "DealsTable",
-              "type": "TABLE_WIDGET_V2",
-              "key": "deals-table",
-              "widgetId": "deals-table",
-              "parentId": "0"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [],
-        "validOnPageLoadActions": true,
-        "id": "Deals",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "snapRows": 98,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_deals",
-  "policies": []
+    "name": "Deals",
+    "slug": "deals"
+  }
 }
