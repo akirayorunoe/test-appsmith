@@ -27,10 +27,10 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "CustomerStatBox",
+              "widgetName": "CustomerStats",
               "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 20,
-              "widgetId": "customer_stat",
+              "widgetId": "customer_stats",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -53,14 +53,15 @@
               ],
               "leftColumn": 0,
               "text": "Total Customers",
-              "value": "3"
+              "value": "3",
+              "key": "customer_stats"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "DealsStatBox",
+              "widgetName": "DealsStats",
               "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 41,
-              "widgetId": "deals_stat",
+              "widgetId": "deals_stats",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -83,14 +84,15 @@
               ],
               "leftColumn": 21,
               "text": "Active Deals",
-              "value": "3"
+              "value": "3",
+              "key": "deals_stats"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "RevenueStatBox",
+              "widgetName": "RevenueStats",
               "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
               "rightColumn": 62,
-              "widgetId": "revenue_stat",
+              "widgetId": "revenue_stats",
               "topRow": 0,
               "bottomRow": 8,
               "parentRowSpace": 10,
@@ -113,7 +115,8 @@
               ],
               "leftColumn": 42,
               "text": "Total Revenue",
-              "value": "$240,000"
+              "value": "$240,000",
+              "key": "revenue_stats"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -153,7 +156,8 @@
                   "x": "Mar",
                   "y": 45000
                 }
-              ]
+              ],
+              "key": "revenue_chart"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -193,7 +197,8 @@
                   "x": "Closed Won",
                   "y": 1
                 }
-              ]
+              ],
+              "key": "deals_chart"
             }
           ]
         },

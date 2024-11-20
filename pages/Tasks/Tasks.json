@@ -197,11 +197,11 @@
                   "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
                 }
               },
-              "key": "tasks_table",
+              "key": "tasks-table",
               "canFreezeColumn": true,
               "rightColumn": 62,
               "textSize": "0.875rem",
-              "widgetId": "tasks_table",
+              "widgetId": "tasks-table",
               "tableData": "[{\"id\":1,\"title\":\"Follow up with Tech Corp\",\"relatedTo\":\"John Smith\",\"dueDate\":\"2024-01-20\",\"priority\":\"High\",\"status\":\"Pending\"},{\"id\":2,\"title\":\"Prepare proposal for Digital Solutions\",\"relatedTo\":\"Emma Johnson\",\"dueDate\":\"2024-01-25\",\"priority\":\"Medium\",\"status\":\"In Progress\"},{\"id\":3,\"title\":\"Schedule meeting with Innovate Inc\",\"relatedTo\":\"Michael Brown\",\"dueDate\":\"2024-01-30\",\"priority\":\"Low\",\"status\":\"Completed\"}]",
               "label": "Tasks",
               "searchKey": "",

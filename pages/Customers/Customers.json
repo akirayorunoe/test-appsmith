@@ -197,12 +197,12 @@
                   "computedValue": "{{CustomersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
                 }
               },
-              "key": "customers_table",
+              "key": "customers-table",
               "canFreezeColumn": true,
               "isDeprecated": false,
               "rightColumn": 62,
               "textSize": "0.875rem",
-              "widgetId": "customers_table",
+              "widgetId": "customers-table",
               "tableData": "[{\"id\":1,\"name\":\"John Smith\",\"email\":\"john.smith@techcorp.com\",\"phone\":\"+1-555-0123\",\"company\":\"Tech Corp\",\"status\":\"Active\"},{\"id\":2,\"name\":\"Emma Johnson\",\"email\":\"emma.j@digitalsolutions.com\",\"phone\":\"+1-555-0124\",\"company\":\"Digital Solutions\",\"status\":\"Active\"},{\"id\":3,\"name\":\"Michael Brown\",\"email\":\"m.brown@innovateinc.com\",\"phone\":\"+1-555-0125\",\"company\":\"Innovate Inc\",\"status\":\"Inactive\"}]",
               "label": "Customers",
               "searchKey": "",

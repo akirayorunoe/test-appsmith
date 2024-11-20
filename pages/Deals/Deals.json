@@ -197,11 +197,11 @@
                   "computedValue": "{{DealsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"closeDate\"]))}}"
                 }
               },
-              "key": "deals_table",
+              "key": "deals-table",
               "canFreezeColumn": true,
               "rightColumn": 62,
               "textSize": "0.875rem",
-              "widgetId": "deals_table",
+              "widgetId": "deals-table",
               "tableData": "[{\"id\":1,\"name\":\"Enterprise Software License\",\"customer\":\"Tech Corp\",\"value\":100000,\"stage\":\"Negotiation\",\"closeDate\":\"2024-03-31\"},{\"id\":2,\"name\":\"Cloud Migration Project\",\"customer\":\"Digital Solutions\",\"value\":75000,\"stage\":\"Proposal\",\"closeDate\":\"2024-04-15\"},{\"id\":3,\"name\":\"IT Consulting Services\",\"customer\":\"Innovate Inc\",\"value\":65000,\"stage\":\"Closed Won\",\"closeDate\":\"2024-03-20\"}]",
               "label": "Deals",
               "searchKey": "",
