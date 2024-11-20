@@ -51,22 +51,19 @@
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.taskName.computedValue"
-                },
-                {
-                  "key": "primaryColumns.assignedTo.computedValue"
+                  "key": "primaryColumns.title.computedValue"
                 },
                 {
                   "key": "primaryColumns.relatedTo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.dueDate.computedValue"
                 },
                 {
                   "key": "primaryColumns.priority.computedValue"
                 },
                 {
                   "key": "primaryColumns.status.computedValue"
-                },
-                {
-                  "key": "primaryColumns.dueDate.computedValue"
                 }
               ],
               "leftColumn": 2,
@@ -88,15 +85,14 @@
               "primaryColumnId": "id",
               "columnSizeMap": {
                 "id": 80,
-                "taskName": 200,
-                "assignedTo": 150,
-                "relatedTo": 150,
-                "priority": 100,
-                "status": 120,
-                "dueDate": 120
+                "title": 250,
+                "relatedTo": 200,
+                "dueDate": 150,
+                "priority": 120,
+                "status": 120
               },
               "widgetName": "TasksTable",
-              "columnOrder": ["id", "taskName", "assignedTo", "relatedTo", "priority", "status", "dueDate"],
+              "columnOrder": ["id", "title", "relatedTo", "dueDate", "priority", "status"],
               "primaryColumns": {
                 "id": {
                   "allowCellWrapping": false,
@@ -115,13 +111,13 @@
                   "label": "ID",
                   "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
                 },
-                "taskName": {
+                "title": {
                   "allowCellWrapping": false,
                   "index": 1,
-                  "width": 200,
-                  "originalId": "taskName",
-                  "id": "taskName",
-                  "alias": "taskName",
+                  "width": 250,
+                  "originalId": "title",
+                  "id": "title",
+                  "alias": "title",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -129,30 +125,13 @@
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "label": "Task Name",
-                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"taskName\"]))}}"
-                },
-                "assignedTo": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "assignedTo",
-                  "id": "assignedTo",
-                  "alias": "assignedTo",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Assigned To",
-                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"assignedTo\"]))}}"
+                  "label": "Title",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}"
                 },
                 "relatedTo": {
                   "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
+                  "index": 2,
+                  "width": 200,
                   "originalId": "relatedTo",
                   "id": "relatedTo",
                   "alias": "relatedTo",
@@ -166,10 +145,27 @@
                   "label": "Related To",
                   "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relatedTo\"]))}}"
                 },
+                "dueDate": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "dueDate",
+                  "id": "dueDate",
+                  "alias": "dueDate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "label": "Due Date",
+                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dueDate\"]))}}"
+                },
                 "priority": {
                   "allowCellWrapping": false,
                   "index": 4,
-                  "width": 100,
+                  "width": 120,
                   "originalId": "priority",
                   "id": "priority",
                   "alias": "priority",
@@ -199,32 +195,14 @@
                   "isVisible": true,
                   "label": "Status",
                   "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
-                },
-                "dueDate": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 120,
-                  "originalId": "dueDate",
-                  "id": "dueDate",
-                  "alias": "dueDate",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "date",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "label": "Due Date",
-                  "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dueDate\"]))}}"
                 }
               },
               "key": "tasks_table",
               "canFreezeColumn": true,
-              "isDeprecated": false,
               "rightColumn": 62,
               "textSize": "0.875rem",
               "widgetId": "tasks_table",
-              "tableData": "[{\"id\":1,\"taskName\":\"Follow up with Tech Corp\",\"assignedTo\":\"John Smith\",\"relatedTo\":\"Enterprise Software License\",\"priority\":\"High\",\"status\":\"In Progress\",\"dueDate\":\"2024-03-25\"},{\"id\":2,\"taskName\":\"Prepare proposal for Digital Solutions\",\"assignedTo\":\"Emma Johnson\",\"relatedTo\":\"Cloud Migration Project\",\"priority\":\"Medium\",\"status\":\"Not Started\",\"dueDate\":\"2024-04-01\"},{\"id\":3,\"taskName\":\"Send contract to Innovate Inc\",\"assignedTo\":\"Michael Brown\",\"relatedTo\":\"IT Consulting Services\",\"priority\":\"High\",\"status\":\"Completed\",\"dueDate\":\"2024-03-20\"}]",
+              "tableData": "[{\"id\":1,\"title\":\"Follow up with Tech Corp\",\"relatedTo\":\"John Smith\",\"dueDate\":\"2024-01-20\",\"priority\":\"High\",\"status\":\"Pending\"},{\"id\":2,\"title\":\"Prepare proposal for Digital Solutions\",\"relatedTo\":\"Emma Johnson\",\"dueDate\":\"2024-01-25\",\"priority\":\"Medium\",\"status\":\"In Progress\"},{\"id\":3,\"title\":\"Schedule meeting with Innovate Inc\",\"relatedTo\":\"Michael Brown\",\"dueDate\":\"2024-01-30\",\"priority\":\"Low\",\"status\":\"Completed\"}]",
               "label": "Tasks",
               "searchKey": "",
               "parentId": "0",
@@ -233,15 +211,8 @@
               "isVisibleSearch": true,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
-              "columnWidthMap": {
-                "id": 80,
-                "taskName": 200,
-                "assignedTo": 150,
-                "relatedTo": 150,
-                "priority": 100,
-                "status": 120,
-                "dueDate": 120
-              }
+              "responsiveBehavior": "fill",
+              "originalTopRow": 2
             }
           ]
         },

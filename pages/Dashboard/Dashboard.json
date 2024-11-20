@@ -1,6 +1,7 @@
 {
-  "gitSyncId": "673d8ab6b8dc772a1ea85020_dashboard",
   "unpublishedPage": {
+    "name": "Dashboard",
+    "slug": "dashboard",
     "layouts": [
       {
         "viewMode": false,
@@ -18,6 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
+          "version": 1,
           "minHeight": 800,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -38,6 +40,17 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
+                }
+              ],
               "leftColumn": 0,
               "text": "Total Customers",
               "value": "3"
@@ -57,6 +70,17 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
+                }
+              ],
               "leftColumn": 21,
               "text": "Active Deals",
               "value": "3"
@@ -76,6 +100,17 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
+                }
+              ],
               "leftColumn": 42,
               "text": "Total Revenue",
               "value": "$240,000"
@@ -94,7 +129,6 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
-              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -103,6 +137,7 @@
                   "key": "boxShadow"
                 }
               ],
+              "leftColumn": 0,
               "chartType": "BAR_CHART",
               "chartName": "Monthly Revenue",
               "chartData": [
@@ -134,7 +169,6 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "parentColumnSpace": 17.21875,
-              "leftColumn": 32,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -143,6 +177,7 @@
                   "key": "boxShadow"
                 }
               ],
+              "leftColumn": 32,
               "chartType": "PIE_CHART",
               "chartName": "Deals by Stage",
               "chartData": [
@@ -163,6 +198,7 @@
           ]
         },
         "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Dashboard",
         "deleted": false,
@@ -174,5 +210,7 @@
     "policies": [],
     "isHidden": false
   },
-  "deleted": false
+  "deleted": false,
+  "gitSyncId": "673d8ab6b8dc772a1ea85020_dashboard",
+  "policies": []
 }

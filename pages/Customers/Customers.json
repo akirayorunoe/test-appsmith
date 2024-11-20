@@ -211,7 +211,9 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
+              "verticalAlignment": "CENTER",
+              "responsiveBehavior": "fill",
+              "originalTopRow": 2
             }
           ]
         },
