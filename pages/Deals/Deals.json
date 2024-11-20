@@ -1,0 +1,104 @@
+{
+  "unpublishedPage": {
+    "name": "Deals",
+    "slug": "deals",
+    "layouts": [
+      {
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 990,
+          "containerStyle": "none",
+          "snapRows": 78,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 90,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "id",
+                "dealName",
+                "customer",
+                "value",
+                "stage",
+                "closeDate"
+              ],
+              "aliasMap": {},
+              "topRow": 2,
+              "bottomRow": 30,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "isSortable": true,
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "rightColumn": 62,
+              "tableData": [
+                {
+                  "id": 1,
+                  "dealName": "Enterprise Solution",
+                  "customer": "ABC Corp",
+                  "value": "$50,000",
+                  "stage": "Negotiation",
+                  "closeDate": "2024-03-31"
+                },
+                {
+                  "id": 2,
+                  "dealName": "Software License",
+                  "customer": "XYZ Ltd",
+                  "value": "$25,000",
+                  "stage": "Proposal",
+                  "closeDate": "2024-04-15"
+                }
+              ],
+              "columns": {
+                "id": {
+                  "index": 0,
+                  "width": 80,
+                  "label": "ID"
+                },
+                "dealName": {
+                  "index": 1,
+                  "width": 200,
+                  "label": "Deal Name"
+                },
+                "customer": {
+                  "index": 2,
+                  "width": 200,
+                  "label": "Customer"
+                },
+                "value": {
+                  "index": 3,
+                  "width": 150,
+                  "label": "Value"
+                },
+                "stage": {
+                  "index": 4,
+                  "width": 150,
+                  "label": "Stage"
+                },
+                "closeDate": {
+                  "index": 5,
+                  "width": 150,
+                  "label": "Close Date"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "unpublishedPage": {
+    "name": "Customers",
+    "slug": "customers",
+    "layouts": [
+      {
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 990,
+          "containerStyle": "none",
+          "snapRows": 78,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 90,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "id",
+                "name",
+                "email",
+                "phone",
+                "company",
+                "status"
+              ],
+              "aliasMap": {},
+              "topRow": 2,
+              "bottomRow": 30,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "isSortable": true,
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "rightColumn": 62,
+              "tableData": [
+                {
+                  "id": 1,
+                  "name": "John Doe",
+                  "email": "john@example.com",
+                  "phone": "+1234567890",
+                  "company": "ABC Corp",
+                  "status": "Active"
+                },
+                {
+                  "id": 2,
+                  "name": "Jane Smith",
+                  "email": "jane@example.com",
+                  "phone": "+0987654321",
+                  "company": "XYZ Ltd",
+                  "status": "Inactive"
+                }
+              ],
+              "columns": {
+                "id": {
+                  "index": 0,
+                  "width": 100,
+                  "label": "ID"
+                },
+                "name": {
+                  "index": 1,
+                  "width": 200,
+                  "label": "Name"
+                },
+                "email": {
+                  "index": 2,
+                  "width": 200,
+                  "label": "Email"
+                },
+                "phone": {
+                  "index": 3,
+                  "width": 150,
+                  "label": "Phone"
+                },
+                "company": {
+                  "index": 4,
+                  "width": 200,
+                  "label": "Company"
+                },
+                "status": {
+                  "index": 5,
+                  "width": 150,
+                  "label": "Status"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

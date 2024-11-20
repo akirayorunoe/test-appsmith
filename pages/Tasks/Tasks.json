@@ -1,0 +1,104 @@
+{
+  "unpublishedPage": {
+    "name": "Tasks",
+    "slug": "tasks",
+    "layouts": [
+      {
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 990,
+          "containerStyle": "none",
+          "snapRows": 78,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 90,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "id",
+                "title",
+                "assignedTo",
+                "dueDate",
+                "priority",
+                "status"
+              ],
+              "aliasMap": {},
+              "topRow": 2,
+              "bottomRow": 30,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "isSortable": true,
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "rightColumn": 62,
+              "tableData": [
+                {
+                  "id": 1,
+                  "title": "Follow up with ABC Corp",
+                  "assignedTo": "John Doe",
+                  "dueDate": "2024-03-15",
+                  "priority": "High",
+                  "status": "In Progress"
+                },
+                {
+                  "id": 2,
+                  "title": "Prepare proposal for XYZ Ltd",
+                  "assignedTo": "Jane Smith",
+                  "dueDate": "2024-03-20",
+                  "priority": "Medium",
+                  "status": "Pending"
+                }
+              ],
+              "columns": {
+                "id": {
+                  "index": 0,
+                  "width": 80,
+                  "label": "ID"
+                },
+                "title": {
+                  "index": 1,
+                  "width": 250,
+                  "label": "Title"
+                },
+                "assignedTo": {
+                  "index": 2,
+                  "width": 150,
+                  "label": "Assigned To"
+                },
+                "dueDate": {
+                  "index": 3,
+                  "width": 150,
+                  "label": "Due Date"
+                },
+                "priority": {
+                  "index": 4,
+                  "width": 100,
+                  "label": "Priority"
+                },
+                "status": {
+                  "index": 5,
+                  "width": 150,
+                  "label": "Status"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
