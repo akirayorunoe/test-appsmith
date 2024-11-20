@@ -6,8 +6,8 @@
   "borderRadius": "0px",
   "borderWidth": "1",
   "bottomRow": 120,
-  "boxShadow": "none",
-  "canFreezeColumn": false,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -32,40 +32,55 @@
     }
   },
   "columnOrder": [
-    "id1",
-    "taskName1",
-    "assignedTo1",
-    "relatedTo1",
-    "priority1",
-    "status1",
-    "dueDate1"
+    "id",
+    "title",
+    "relatedTo",
+    "dueDate",
+    "priority",
+    "status"
   ],
+  "columnSizeMap": {
+    "id": 80,
+    "title": 250,
+    "relatedTo": 200,
+    "dueDate": 150,
+    "priority": 120,
+    "status": 120
+  },
   "columnUpdatedAt": 1732092861035,
   "defaultPageSize": 10,
+  "defaultSelectedRowIndex": 0,
+  "delimiter": ",",
   "dynamicBindingPathList": [
     {
-      "key": "primaryColumns.id1.computedValue"
-    },
-    {
-      "key": "primaryColumns.taskName1.computedValue"
-    },
-    {
-      "key": "primaryColumns.assignedTo1.computedValue"
-    },
-    {
-      "key": "primaryColumns.relatedTo1.computedValue"
-    },
-    {
-      "key": "primaryColumns.priority1.computedValue"
-    },
-    {
-      "key": "primaryColumns.status1.computedValue"
-    },
-    {
-      "key": "primaryColumns.dueDate1.computedValue"
-    },
-    {
       "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.title.computedValue"
+    },
+    {
+      "key": "primaryColumns.relatedTo.computedValue"
+    },
+    {
+      "key": "primaryColumns.dueDate.computedValue"
+    },
+    {
+      "key": "primaryColumns.priority.computedValue"
+    },
+    {
+      "key": "primaryColumns.status.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -78,18 +93,20 @@
   "enableServerSideFiltering": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
   "isSortable": true,
   "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
-  "key": "tasks_table",
+  "key": "tasks-table",
   "label": "Tasks",
   "labelTextSize": "0.875rem",
-  "leftColumn": 8,
+  "leftColumn": 2,
+  "parentId": "0",
+  "primaryColumnId": "id",
   "primaryColumns": {
     "assignedTo1": {
-      "alias": "assignedTo",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -123,7 +140,6 @@
       "width": 150
     },
     "dueDate1": {
-      "alias": "dueDate",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -156,8 +172,24 @@
       "verticalAlignment": "",
       "width": 150
     },
-    "id1": {
+    "id": {
+      "allowCellWrapping": false,
+      "index": 0,
+      "width": 80,
+      "originalId": "id",
+      "id": "id",
       "alias": "id",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "columnType": "text",
+      "textSize": "0.875rem",
+      "enableFilter": true,
+      "enableSort": true,
+      "isVisible": true,
+      "label": "ID",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
+    },
+    "id1": {
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -189,6 +221,23 @@
       "validation": {},
       "verticalAlignment": "",
       "width": 150
+    },
+    "priority": {
+      "allowCellWrapping": false,
+      "index": 4,
+      "width": 120,
+      "originalId": "priority",
+      "id": "priority",
+      "alias": "priority",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "columnType": "text",
+      "textSize": "0.875rem",
+      "enableFilter": true,
+      "enableSort": true,
+      "isVisible": true,
+      "label": "Priority",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"priority\"]))}}"
     },
     "priority1": {
       "alias": "priority",
@@ -224,6 +273,23 @@
       "verticalAlignment": "",
       "width": 150
     },
+    "relatedTo": {
+      "allowCellWrapping": false,
+      "index": 2,
+      "width": 200,
+      "originalId": "relatedTo",
+      "id": "relatedTo",
+      "alias": "relatedTo",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "columnType": "text",
+      "textSize": "0.875rem",
+      "enableFilter": true,
+      "enableSort": true,
+      "isVisible": true,
+      "label": "Related To",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"relatedTo\"]))}}"
+    },
     "relatedTo1": {
       "alias": "relatedTo",
       "allowCellWrapping": false,
@@ -257,6 +323,23 @@
       "validation": {},
       "verticalAlignment": "",
       "width": 150
+    },
+    "status": {
+      "allowCellWrapping": false,
+      "index": 5,
+      "width": 120,
+      "originalId": "status",
+      "id": "status",
+      "alias": "status",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "columnType": "text",
+      "textSize": "0.875rem",
+      "enableFilter": true,
+      "enableSort": true,
+      "isVisible": true,
+      "label": "Status",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}"
     },
     "status1": {
       "alias": "status",
@@ -325,14 +408,36 @@
       "validation": {},
       "verticalAlignment": "",
       "width": 150
+    },
+    "title": {
+      "allowCellWrapping": false,
+      "index": 1,
+      "width": 250,
+      "originalId": "title",
+      "id": "title",
+      "alias": "title",
+      "horizontalAlignment": "LEFT",
+      "verticalAlignment": "CENTER",
+      "columnType": "text",
+      "textSize": "0.875rem",
+      "enableFilter": true,
+      "enableSort": true,
+      "isVisible": true,
+      "label": "Title",
+      "computedValue": "{{TasksTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}"
     }
   },
-  "rightColumn": 248,
-  "tableData": "[{\"id\":1,\"taskName\":\"Follow up with Tech Corp\",\"assignedTo\":\"John Smith\",\"relatedTo\":\"Enterprise Software License\",\"priority\":\"High\",\"status\":\"In Progress\",\"dueDate\":\"2024-03-25\"},{\"id\":2,\"taskName\":\"Prepare proposal for Digital Solutions\",\"assignedTo\":\"Emma Johnson\",\"relatedTo\":\"Cloud Migration Project\",\"priority\":\"Medium\",\"status\":\"Not Started\",\"dueDate\":\"2024-04-01\"},{\"id\":3,\"taskName\":\"Send contract to Innovate Inc\",\"assignedTo\":\"Michael Brown\",\"relatedTo\":\"IT Consulting Services\",\"priority\":\"High\",\"status\":\"Completed\",\"dueDate\":\"2024-03-20\"}]",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchKey": "",
+  "tableData": "[{\"id\":1,\"title\":\"Follow up with Tech Corp\",\"relatedTo\":\"John Smith\",\"dueDate\":\"2024-01-20\",\"priority\":\"High\",\"status\":\"Pending\"},{\"id\":2,\"title\":\"Prepare proposal for Digital Solutions\",\"relatedTo\":\"Emma Johnson\",\"dueDate\":\"2024-01-25\",\"priority\":\"Medium\",\"status\":\"In Progress\"},{\"id\":3,\"title\":\"Schedule meeting with Innovate Inc\",\"relatedTo\":\"Michael Brown\",\"dueDate\":\"2024-01-30\",\"priority\":\"Low\",\"status\":\"Completed\"}]",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 2,
+  "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
-  "version": 1,
-  "widgetId": "tasks_table",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "tasks-table",
   "widgetName": "TasksTable"
 }
