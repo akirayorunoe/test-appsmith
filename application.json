@@ -34,11 +34,23 @@
       "isDefault": true
     },
     {
-      "id": "AuthPage",
+      "id": "Dashboard",
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "Customers",
+      "isDefault": false
+    },
+    {
+      "id": "Deals",
+      "isDefault": false
+    },
+    {
+      "id": "Tasks",
+      "isDefault": false
+    },
+    {
+      "id": "AuthPage",
       "isDefault": false
     }
   ],
